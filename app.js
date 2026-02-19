@@ -127,7 +127,6 @@ async function loadSelectedSolution() {
   const { algorithmFolder } = getDatasetPaths();
 
   // Dynamically select the best solution based on applied weights
-  console.log(selectedWeights);
   await selectAndRenderBestSolution(selectedWeights);
 }
 
