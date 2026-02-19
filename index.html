@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Berth Allocation & Scheduling Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <h1>Multi-Objective Berth Allocation & Scheduling Visualizer
+  </h1>
+
+  <div class="container">
+
+    <!-- Global Help / Info Modal -->
+    <div id="globalInfoModal" class="info-tooltip" role="dialog" aria-hidden="true">
+      <div style="font-size:16px; line-height:1.35;">
+
+        <strong style="font-size:18px;">What this visualizer does</strong><br>
+        📌 This tool visualizes the solution of a <strong>Berth Allocation & Scheduling Problem</strong>.<br>
+        📌 Select a <strong>scenario</strong> (number of vessels – number of berths) and an <strong>optimization
+          algorithm</strong>, then press <strong>Display</strong>, and the system presents the berth assignment and
+        schedule produced by the selected algorithm.
+
+        <br><br>
+
+        <strong style="font-size:18px;">Multi-objective nature of the problem</strong><br>
+        📌 Berth allocation and scheduling is a <strong>multi-objective optimization problem</strong>.<br>
+        📌 The objectives considered are:
+        <ul style="margin:6px 0 6px 18px;">
+          <li><strong>Time</strong> (e.g. waiting and service times)</li>
+          <li><strong>Energy</strong> consumption</li>
+          <li><strong>Cost</strong></li>
+          <li><strong>Load balance</strong> among berths</li>
+        </ul>
+        📌 Each algorithm produces <strong>multiple alternative solutions</strong>, where each solution represents a
+        different trade-off between these objectives.
+
+        <br><br>
+
+        <strong style="font-size:18px;">Objective prioritization</strong><br>
+        📌 By clicking the <span class="inline-icon">⏣</span> button, you can assign <strong>relative
+          importance (weights)</strong>
+        to each objective using the radar chart.<br>
+        📌 After applying the weights and pressing <strong>Display</strong> again, the system selects and visualizes
+        the solution that best matches your preferences.
+
+        <br><br>
+
+        <strong style="font-size:18px;">Expected Arrivals panel</strong><br>
+        📌 After pressing <strong>Display</strong>, the arriving vessels are shown in the “Expected Arrivals”
+        column.<br>
+        📌 Vessels are ordered from top to bottom according to their <strong>arrival time</strong>.
+
+        <br><br>
+
+        <strong style="font-size:18px;">Port panel</strong><br>
+        📌 Each berth is represented by a box displaying its full schedule.<br>
+        📌 All vessels from the arrivals list are allocated to berths based on the selected solution.<br>
+        📌 Berths that remain unused are highlighted in <strong>red</strong>.<br>
+        📌 Hovering over a vessel shows its mooring details, while clicking on it highlights the vessel
+        in the arrivals panel.
+
+      </div>
+    </div>
+
+    <!-- Leftmost Radar Panel Overlay -->
+    <div class="radar-panel" id="radarpanel">
+      <div class="radar-header" id="radarheader">
+        <h3>Adjust Weights</h3>
+      </div>
+
+      <div class="radar-chart">
+        <canvas id="radarCanvas" width="530" height="500"></canvas>
+        <div class="radar-buttons">
+          <button id="resetBtn">Reset</button>
+          <button id="applyBtn">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left Panel -->
+    <div class="port-panel">
+      <div class="toolbar">
+
+        <!-- Left side controls -->
+        <div class="toolbar-left">
+          <select id="scenarioSelect">
+            <option>Scenario</option>
+            <option value="40-10">D40-10</option>
+            <option value="60-20">D60-20</option>
+            <option value="80-20">D80-20</option>
+            <option value="100-25">D100-25</option>
+          </select>
+
+          <select id="algSelect">
+            <option>Algorithm</option>
+            <option value="nsga2">NSGA-II</option>
+            <option value="nsga3">NSGA-III</option>
+            <option value="spea2">SPEA2</option>
+            <option value="moead">MOEA/D</option>
+            <option value="nsacsad">NSACSA/D</option>
+            <option value="smoalns">SMOALNS</option>
+            <option value="nsalns">NSALNS</option>
+          </select>
+
+          <button id="weightsBtn">⏣</button>
+          <button id="runBtn">Display</button>
+        </div>
+
+        <!-- Right side -->
+        <div class="toolbar-right">
+          <button id="infoBtn" class="info-btn">Info</button>
+        </div>
+
+      </div>
+
+      <div class="berths-wrapper">
+        <div id="berths"></div>
+      </div>
+    </div>
+
+
+    <!-- Right Panel -->
+    <div class="arrivals-panel">
+      <div class="arrivals-header">
+        <h3>Expected Arrivals</h3>
+      </div>
+      <div id="ships">
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
