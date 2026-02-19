@@ -1,0 +1,802 @@
+[
+  {
+    "sol": 1,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.326656,
+    "Load": 0.406248,
+    "file": "sol1.csv"
+  },
+  {
+    "sol": 2,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.32366,
+    "Load": 0.4076,
+    "file": "sol2.csv"
+  },
+  {
+    "sol": 3,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.326037,
+    "Load": 0.406423,
+    "file": "sol3.csv"
+  },
+  {
+    "sol": 4,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.327562,
+    "Load": 0.406122,
+    "file": "sol4.csv"
+  },
+  {
+    "sol": 5,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.329432,
+    "Load": 0.405791,
+    "file": "sol5.csv"
+  },
+  {
+    "sol": 6,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.321646,
+    "Load": 0.408501,
+    "file": "sol6.csv"
+  },
+  {
+    "sol": 7,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.322242,
+    "Load": 0.408235,
+    "file": "sol7.csv"
+  },
+  {
+    "sol": 8,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.322393,
+    "Load": 0.408177,
+    "file": "sol8.csv"
+  },
+  {
+    "sol": 9,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.322893,
+    "Load": 0.407896,
+    "file": "sol9.csv"
+  },
+  {
+    "sol": 10,
+    "Time": 0.25523,
+    "Energy": 0.260488,
+    "Cost": 0.328836,
+    "Load": 0.405793,
+    "file": "sol10.csv"
+  },
+  {
+    "sol": 11,
+    "Time": 0.255314,
+    "Energy": 0.260494,
+    "Cost": 0.322145,
+    "Load": 0.408422,
+    "file": "sol11.csv"
+  },
+  {
+    "sol": 12,
+    "Time": 0.255314,
+    "Energy": 0.260516,
+    "Cost": 0.323826,
+    "Load": 0.407537,
+    "file": "sol12.csv"
+  },
+  {
+    "sol": 13,
+    "Time": 0.255314,
+    "Energy": 0.260516,
+    "Cost": 0.325314,
+    "Load": 0.40711,
+    "file": "sol13.csv"
+  },
+  {
+    "sol": 14,
+    "Time": 0.255314,
+    "Energy": 0.260631,
+    "Cost": 0.320412,
+    "Load": 0.40953,
+    "file": "sol14.csv"
+  },
+  {
+    "sol": 15,
+    "Time": 0.255314,
+    "Energy": 0.260631,
+    "Cost": 0.321636,
+    "Load": 0.4088,
+    "file": "sol15.csv"
+  },
+  {
+    "sol": 16,
+    "Time": 0.255314,
+    "Energy": 0.260631,
+    "Cost": 0.324114,
+    "Load": 0.407326,
+    "file": "sol16.csv"
+  },
+  {
+    "sol": 17,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.32292,
+    "Load": 0.407685,
+    "file": "sol17.csv"
+  },
+  {
+    "sol": 18,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.323319,
+    "Load": 0.407459,
+    "file": "sol18.csv"
+  },
+  {
+    "sol": 19,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.322637,
+    "Load": 0.407995,
+    "file": "sol19.csv"
+  },
+  {
+    "sol": 20,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.328477,
+    "Load": 0.405686,
+    "file": "sol20.csv"
+  },
+  {
+    "sol": 21,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.321047,
+    "Load": 0.408842,
+    "file": "sol21.csv"
+  },
+  {
+    "sol": 22,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.322054,
+    "Load": 0.408073,
+    "file": "sol22.csv"
+  },
+  {
+    "sol": 23,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.322511,
+    "Load": 0.407841,
+    "file": "sol23.csv"
+  },
+  {
+    "sol": 24,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.322822,
+    "Load": 0.407783,
+    "file": "sol24.csv"
+  },
+  {
+    "sol": 25,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.323505,
+    "Load": 0.407309,
+    "file": "sol25.csv"
+  },
+  {
+    "sol": 26,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.325378,
+    "Load": 0.406586,
+    "file": "sol26.csv"
+  },
+  {
+    "sol": 27,
+    "Time": 0.255398,
+    "Energy": 0.2605,
+    "Cost": 0.328181,
+    "Load": 0.405923,
+    "file": "sol27.csv"
+  },
+  {
+    "sol": 28,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.323477,
+    "Load": 0.407445,
+    "file": "sol28.csv"
+  },
+  {
+    "sol": 29,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.319982,
+    "Load": 0.409752,
+    "file": "sol29.csv"
+  },
+  {
+    "sol": 30,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320685,
+    "Load": 0.40912,
+    "file": "sol30.csv"
+  },
+  {
+    "sol": 31,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.321035,
+    "Load": 0.408746,
+    "file": "sol31.csv"
+  },
+  {
+    "sol": 32,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.321226,
+    "Load": 0.408642,
+    "file": "sol32.csv"
+  },
+  {
+    "sol": 33,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.319893,
+    "Load": 0.409852,
+    "file": "sol33.csv"
+  },
+  {
+    "sol": 34,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.319956,
+    "Load": 0.409646,
+    "file": "sol34.csv"
+  },
+  {
+    "sol": 35,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320096,
+    "Load": 0.409549,
+    "file": "sol35.csv"
+  },
+  {
+    "sol": 36,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320185,
+    "Load": 0.409448,
+    "file": "sol36.csv"
+  },
+  {
+    "sol": 37,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320473,
+    "Load": 0.409318,
+    "file": "sol37.csv"
+  },
+  {
+    "sol": 38,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320574,
+    "Load": 0.409128,
+    "file": "sol38.csv"
+  },
+  {
+    "sol": 39,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320671,
+    "Load": 0.409031,
+    "file": "sol39.csv"
+  },
+  {
+    "sol": 40,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.320896,
+    "Load": 0.408889,
+    "file": "sol40.csv"
+  },
+  {
+    "sol": 41,
+    "Time": 0.255482,
+    "Energy": 0.260644,
+    "Cost": 0.321479,
+    "Load": 0.408513,
+    "file": "sol41.csv"
+  },
+  {
+    "sol": 42,
+    "Time": 0.255482,
+    "Energy": 0.266195,
+    "Cost": 0.327366,
+    "Load": 0.406133,
+    "file": "sol42.csv"
+  },
+  {
+    "sol": 43,
+    "Time": 0.255566,
+    "Energy": 0.260598,
+    "Cost": 0.327164,
+    "Load": 0.405994,
+    "file": "sol43.csv"
+  },
+  {
+    "sol": 44,
+    "Time": 0.255566,
+    "Energy": 0.260646,
+    "Cost": 0.321901,
+    "Load": 0.408328,
+    "file": "sol44.csv"
+  },
+  {
+    "sol": 45,
+    "Time": 0.255566,
+    "Energy": 0.260646,
+    "Cost": 0.32277,
+    "Load": 0.407732,
+    "file": "sol45.csv"
+  },
+  {
+    "sol": 46,
+    "Time": 0.255566,
+    "Energy": 0.260662,
+    "Cost": 0.319817,
+    "Load": 0.409928,
+    "file": "sol46.csv"
+  },
+  {
+    "sol": 47,
+    "Time": 0.255566,
+    "Energy": 0.266196,
+    "Cost": 0.327735,
+    "Load": 0.405734,
+    "file": "sol47.csv"
+  },
+  {
+    "sol": 48,
+    "Time": 0.25565,
+    "Energy": 0.26055,
+    "Cost": 0.327306,
+    "Load": 0.406211,
+    "file": "sol48.csv"
+  },
+  {
+    "sol": 49,
+    "Time": 0.25565,
+    "Energy": 0.260667,
+    "Cost": 0.321432,
+    "Load": 0.40864,
+    "file": "sol49.csv"
+  },
+  {
+    "sol": 50,
+    "Time": 0.255734,
+    "Energy": 0.260646,
+    "Cost": 0.329888,
+    "Load": 0.405608,
+    "file": "sol50.csv"
+  },
+  {
+    "sol": 51,
+    "Time": 0.255734,
+    "Energy": 0.260674,
+    "Cost": 0.320284,
+    "Load": 0.409345,
+    "file": "sol51.csv"
+  },
+  {
+    "sol": 52,
+    "Time": 0.255818,
+    "Energy": 0.260512,
+    "Cost": 0.326333,
+    "Load": 0.406324,
+    "file": "sol52.csv"
+  },
+  {
+    "sol": 53,
+    "Time": 0.255818,
+    "Energy": 0.26075,
+    "Cost": 0.32408,
+    "Load": 0.40716,
+    "file": "sol53.csv"
+  },
+  {
+    "sol": 54,
+    "Time": 0.255902,
+    "Energy": 0.261469,
+    "Cost": 0.32555,
+    "Load": 0.406531,
+    "file": "sol54.csv"
+  },
+  {
+    "sol": 55,
+    "Time": 0.255986,
+    "Energy": 0.2664,
+    "Cost": 0.327373,
+    "Load": 0.405854,
+    "file": "sol55.csv"
+  },
+  {
+    "sol": 56,
+    "Time": 0.25607,
+    "Energy": 0.261459,
+    "Cost": 0.32419,
+    "Load": 0.407027,
+    "file": "sol56.csv"
+  },
+  {
+    "sol": 57,
+    "Time": 0.256154,
+    "Energy": 0.262799,
+    "Cost": 0.327998,
+    "Load": 0.405864,
+    "file": "sol57.csv"
+  },
+  {
+    "sol": 58,
+    "Time": 0.256238,
+    "Energy": 0.261128,
+    "Cost": 0.32533,
+    "Load": 0.406697,
+    "file": "sol58.csv"
+  },
+  {
+    "sol": 59,
+    "Time": 0.256238,
+    "Energy": 0.26126,
+    "Cost": 0.324865,
+    "Load": 0.406896,
+    "file": "sol59.csv"
+  },
+  {
+    "sol": 60,
+    "Time": 0.256238,
+    "Energy": 0.26126,
+    "Cost": 0.324661,
+    "Load": 0.406995,
+    "file": "sol60.csv"
+  },
+  {
+    "sol": 61,
+    "Time": 0.256406,
+    "Energy": 0.261165,
+    "Cost": 0.32499,
+    "Load": 0.40676,
+    "file": "sol61.csv"
+  },
+  {
+    "sol": 62,
+    "Time": 0.256658,
+    "Energy": 0.26114,
+    "Cost": 0.326936,
+    "Load": 0.406044,
+    "file": "sol62.csv"
+  },
+  {
+    "sol": 63,
+    "Time": 0.25691,
+    "Energy": 0.26729,
+    "Cost": 0.326235,
+    "Load": 0.406182,
+    "file": "sol63.csv"
+  },
+  {
+    "sol": 64,
+    "Time": 0.256994,
+    "Energy": 0.26165,
+    "Cost": 0.327391,
+    "Load": 0.405964,
+    "file": "sol64.csv"
+  },
+  {
+    "sol": 65,
+    "Time": 0.257834,
+    "Energy": 0.262485,
+    "Cost": 0.32321,
+    "Load": 0.407541,
+    "file": "sol65.csv"
+  },
+  {
+    "sol": 66,
+    "Time": 0.257834,
+    "Energy": 0.262485,
+    "Cost": 0.324772,
+    "Load": 0.406827,
+    "file": "sol66.csv"
+  },
+  {
+    "sol": 67,
+    "Time": 0.258002,
+    "Energy": 0.26818,
+    "Cost": 0.324994,
+    "Load": 0.406639,
+    "file": "sol67.csv"
+  },
+  {
+    "sol": 68,
+    "Time": 0.258254,
+    "Energy": 0.262734,
+    "Cost": 0.326255,
+    "Load": 0.406275,
+    "file": "sol68.csv"
+  },
+  {
+    "sol": 69,
+    "Time": 0.258254,
+    "Energy": 0.262776,
+    "Cost": 0.325675,
+    "Load": 0.406527,
+    "file": "sol69.csv"
+  },
+  {
+    "sol": 70,
+    "Time": 0.258338,
+    "Energy": 0.263577,
+    "Cost": 0.324366,
+    "Load": 0.406947,
+    "file": "sol70.csv"
+  },
+  {
+    "sol": 71,
+    "Time": 0.258422,
+    "Energy": 0.262536,
+    "Cost": 0.325882,
+    "Load": 0.406378,
+    "file": "sol71.csv"
+  },
+  {
+    "sol": 72,
+    "Time": 0.259514,
+    "Energy": 0.276655,
+    "Cost": 0.335818,
+    "Load": 0.405485,
+    "file": "sol72.csv"
+  },
+  {
+    "sol": 73,
+    "Time": 0.259514,
+    "Energy": 0.276655,
+    "Cost": 0.336145,
+    "Load": 0.405193,
+    "file": "sol73.csv"
+  },
+  {
+    "sol": 74,
+    "Time": 0.259598,
+    "Energy": 0.276663,
+    "Cost": 0.335449,
+    "Load": 0.405402,
+    "file": "sol74.csv"
+  },
+  {
+    "sol": 75,
+    "Time": 0.259598,
+    "Energy": 0.276684,
+    "Cost": 0.335093,
+    "Load": 0.405514,
+    "file": "sol75.csv"
+  },
+  {
+    "sol": 76,
+    "Time": 0.259598,
+    "Energy": 0.276687,
+    "Cost": 0.336311,
+    "Load": 0.405119,
+    "file": "sol76.csv"
+  },
+  {
+    "sol": 77,
+    "Time": 0.259682,
+    "Energy": 0.276667,
+    "Cost": 0.334641,
+    "Load": 0.405435,
+    "file": "sol77.csv"
+  },
+  {
+    "sol": 78,
+    "Time": 0.259682,
+    "Energy": 0.276667,
+    "Cost": 0.334321,
+    "Load": 0.405589,
+    "file": "sol78.csv"
+  },
+  {
+    "sol": 79,
+    "Time": 0.259682,
+    "Energy": 0.276667,
+    "Cost": 0.334854,
+    "Load": 0.405351,
+    "file": "sol79.csv"
+  },
+  {
+    "sol": 80,
+    "Time": 0.259682,
+    "Energy": 0.276667,
+    "Cost": 0.335614,
+    "Load": 0.405252,
+    "file": "sol80.csv"
+  },
+  {
+    "sol": 81,
+    "Time": 0.25985,
+    "Energy": 0.276691,
+    "Cost": 0.335273,
+    "Load": 0.405344,
+    "file": "sol81.csv"
+  },
+  {
+    "sol": 82,
+    "Time": 0.25985,
+    "Energy": 0.276691,
+    "Cost": 0.335354,
+    "Load": 0.405297,
+    "file": "sol82.csv"
+  },
+  {
+    "sol": 83,
+    "Time": 0.260018,
+    "Energy": 0.276749,
+    "Cost": 0.335988,
+    "Load": 0.405194,
+    "file": "sol83.csv"
+  },
+  {
+    "sol": 84,
+    "Time": 0.261363,
+    "Energy": 0.276997,
+    "Cost": 0.334622,
+    "Load": 0.405458,
+    "file": "sol84.csv"
+  },
+  {
+    "sol": 85,
+    "Time": 0.261363,
+    "Energy": 0.276997,
+    "Cost": 0.334971,
+    "Load": 0.405304,
+    "file": "sol85.csv"
+  },
+  {
+    "sol": 86,
+    "Time": 0.263211,
+    "Energy": 0.366493,
+    "Cost": 0.337625,
+    "Load": 0.40497,
+    "file": "sol86.csv"
+  },
+  {
+    "sol": 87,
+    "Time": 0.263379,
+    "Energy": 0.366506,
+    "Cost": 0.337523,
+    "Load": 0.405024,
+    "file": "sol87.csv"
+  },
+  {
+    "sol": 88,
+    "Time": 0.263463,
+    "Energy": 0.366535,
+    "Cost": 0.336741,
+    "Load": 0.405088,
+    "file": "sol88.csv"
+  },
+  {
+    "sol": 89,
+    "Time": 0.263463,
+    "Energy": 0.367188,
+    "Cost": 0.338317,
+    "Load": 0.404901,
+    "file": "sol89.csv"
+  },
+  {
+    "sol": 90,
+    "Time": 0.263631,
+    "Energy": 0.366555,
+    "Cost": 0.336927,
+    "Load": 0.405022,
+    "file": "sol90.csv"
+  },
+  {
+    "sol": 91,
+    "Time": 0.263631,
+    "Energy": 0.367201,
+    "Cost": 0.337504,
+    "Load": 0.404884,
+    "file": "sol91.csv"
+  },
+  {
+    "sol": 92,
+    "Time": 0.264135,
+    "Energy": 0.367351,
+    "Cost": 0.336576,
+    "Load": 0.404948,
+    "file": "sol92.csv"
+  },
+  {
+    "sol": 93,
+    "Time": 0.267496,
+    "Energy": 0.376978,
+    "Cost": 0.3446,
+    "Load": 0.404316,
+    "file": "sol93.csv"
+  },
+  {
+    "sol": 94,
+    "Time": 0.267496,
+    "Energy": 0.376978,
+    "Cost": 0.343515,
+    "Load": 0.404729,
+    "file": "sol94.csv"
+  },
+  {
+    "sol": 95,
+    "Time": 0.267496,
+    "Energy": 0.376978,
+    "Cost": 0.343564,
+    "Load": 0.404647,
+    "file": "sol95.csv"
+  },
+  {
+    "sol": 96,
+    "Time": 0.267496,
+    "Energy": 0.376978,
+    "Cost": 0.343776,
+    "Load": 0.404636,
+    "file": "sol96.csv"
+  },
+  {
+    "sol": 97,
+    "Time": 0.267496,
+    "Energy": 0.376984,
+    "Cost": 0.342868,
+    "Load": 0.404835,
+    "file": "sol97.csv"
+  },
+  {
+    "sol": 98,
+    "Time": 0.26758,
+    "Energy": 0.376988,
+    "Cost": 0.344157,
+    "Load": 0.404619,
+    "file": "sol98.csv"
+  },
+  {
+    "sol": 99,
+    "Time": 0.267832,
+    "Energy": 0.377452,
+    "Cost": 0.343145,
+    "Load": 0.404744,
+    "file": "sol99.csv"
+  },
+  {
+    "sol": 100,
+    "Time": 0.268924,
+    "Energy": 0.385027,
+    "Cost": 0.342761,
+    "Load": 0.40481,
+    "file": "sol100.csv"
+  }
+]

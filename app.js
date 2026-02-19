@@ -576,51 +576,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
 async function selectAndRenderBestSolution(weights) {
   const { algorithmFolder } = getDatasetPaths();
 
-  let i = 1;
+  // Fetch precomputed JSON once
+  const solutions = await fetch(`${algorithmFolder}/solutions.json`)
+    .then(res => res.json());
+
+  if (!solutions || !solutions.length) {
+    console.warn("No solutions found in JSON!");
+    return;
+  }
+
+  // Find best solution according to weighted sum
   let minSum = Infinity;
   let bestSolFile = null;
 
-  while (true) {
-    const objPath = `${algorithmFolder}/sol${i}_obj.csv`;
-
-    // Stop when file does not exist
-    if (!(await fileExists(objPath))) {
-      console.log(`Stopped at sol${i}_obj.csv (not found)`);
-      break;
-    }
-
-    const results = await new Promise((resolve) => {
-      Papa.parse(objPath, {
-        download: true,
-        header: true,
-        complete: resolve,
-        error: () => resolve(null)
-      });
-    });
-
-    if (!results || !results.data || !results.data.length) {
-      i++;
-      continue;
-    }
-
-    const obj = results.data[0];
-
+  for (const sol of solutions) {
     const sum =
-      parseFloat(obj.Time)   * weights.Time +
-      parseFloat(obj.Energy) * weights.Energy +
-      parseFloat(obj.Cost)   * weights.Cost +
-      parseFloat(obj.Load)   * weights.Load;
+      sol.Time   * weights.Time +
+      sol.Energy * weights.Energy +
+      sol.Cost   * weights.Cost +
+      sol.Load   * weights.Load;
 
     if (sum < minSum) {
       minSum = sum;
-      bestSolFile = `${algorithmFolder}/sol${i}.csv`;
+      bestSolFile = `${algorithmFolder}/${sol.file}`;
     }
-
-    i++;
   }
 
   if (bestSolFile) {
@@ -630,6 +612,60 @@ async function selectAndRenderBestSolution(weights) {
     console.warn("No valid solution found!");
   }
 }
+
+// async function selectAndRenderBestSolution(weights) {
+//   const { algorithmFolder } = getDatasetPaths();
+
+//   let i = 1;
+//   let minSum = Infinity;
+//   let bestSolFile = null;
+
+//   while (true) {
+//     const objPath = `${algorithmFolder}/sol${i}_obj.csv`;
+
+//     // Stop when file does not exist
+//     if (!(await fileExists(objPath))) {
+//       console.log(`Stopped at sol${i}_obj.csv (not found)`);
+//       break;
+//     }
+
+//     const results = await new Promise((resolve) => {
+//       Papa.parse(objPath, {
+//         download: true,
+//         header: true,
+//         complete: resolve,
+//         error: () => resolve(null)
+//       });
+//     });
+
+//     if (!results || !results.data || !results.data.length) {
+//       i++;
+//       continue;
+//     }
+
+//     const obj = results.data[0];
+
+//     const sum =
+//       parseFloat(obj.Time)   * weights.Time +
+//       parseFloat(obj.Energy) * weights.Energy +
+//       parseFloat(obj.Cost)   * weights.Cost +
+//       parseFloat(obj.Load)   * weights.Load;
+
+//     if (sum < minSum) {
+//       minSum = sum;
+//       bestSolFile = `${algorithmFolder}/sol${i}.csv`;
+//     }
+
+//     i++;
+//   }
+
+//   if (bestSolFile) {
+//     console.log("Best solution selected:", bestSolFile);
+//     renderSolutionOverlay(bestSolFile);
+//   } else {
+//     console.warn("No valid solution found!");
+//   }
+// }
 
 
 function getRadarWeights() {
